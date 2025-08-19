@@ -1,0 +1,130 @@
+
+
+Shakunt Malik
++91 925-884-9238|sha256.malik@gmail.com|sha256-malik.com|linkedin.com/in/sha256-malik|github.com/sha256-malik
+Education
+Coventry UniversityCoventry, U.K
+Bachelor’s of Science in Computer Science, First Class(Hons)Jan. 2020 – May 2023
+Professional Experience
+CISCOOct 2024 – June 2025
+Technical AnalystBerlin, Germany
+•
+Spearheaded the development of a Web3 decentralized application (DApp) using microservices architecture with
+Java and Spring Boot, providing a scalable backend for blockchain interactions.
+•
+Designed and implemented smart contracts on Ethereum using Solidity, enabling secure and transparent
+transactions within the DApp.
+•
+Developed microservices to handle user authentication, wallet integration, and transaction processing, each service
+interacting with the blockchain via web3.js and managed independently for modularity.
+•
+Employed IPFS (InterPlanetary File System) for decentralized storage, ensuring data integrity and availability
+across the network.
+•
+Utilized Docker and Kubernetes for containerization and orchestration, ensuring efficient deployment and scaling of
+microservices within a cloud environment.
+•
+Implemented asynchronous communication between services using Kafka, optimizing transaction processing and
+improving system reliability.
+•
+Collaborated with the DevOps team to establish CI/CD pipelines, enabling automated testing and secure
+deployment of updates to the smart contracts and backend services.
+•
+Integrated AWS cloud services for deployment, monitoring, and scalability of decentralized applications.
+CISCOApril 2023 – Oct 2024
+Software DeveloperBerlin, Germany
+•
+Spearheaded the development of a Django + DRF project to architect an API focused on managing annotators and
+their qualifications, integrating front-end technologies, particularly ReactJs, to enhance user interface and
+experience.
+•
+Configured the project to use a MySQL database instead of the default SQLite database.
+•
+Implemented synthetic data within the database to accurately emulate real-world application scenarios, ensuring
+the front-end components interacted seamlessly with backend data.
+•
+Given Public and Private Cloud Platform administration, Kubernetes configuration and support.
+•
+Utilized Python and Flask to build auxiliary microservices for handling lightweight backend tasks.
+CISCOFeb 2023 – April 2023
+Project-ReConvertNew York, U.S.A
+•
+Developed new user-interface features using React JS from PHP
+•
+Build reusable components and front-end libraries for future use
+•
+Optimize applications for maximum speed and scalability
+•
+Collaborate with other team members and stakeholders to design and implement new features
+•
+Integrated Python and Flask-based REST endpoints to support dynamic UI components.
+AmazonAug.  2021 – December 2022
+Full-Stack Java DeveloperCalifornia, USA
+•
+Engineered robust, scalable microservices in Java using Spring Boot, crafting clean and efficient code to meet
+functional requirements and ensuring high availability and resilience.
+•
+Utilized AWS cloud solutions for backend service hosting, database management, and application scalability.
+•
+Employed Docker for containerization, facilitating consistent deployments and seamless integration across
+development, testing, and production environments.
+•
+Developed and maintained RESTful APIs, enabling seamless and secure client-server communications within a
+service-oriented architecture.
+•
+Implemented dynamic user interfaces with JavaScript, optimizing interactivity and user engagement through
+responsive design and modern web development practices.
+•
+Took ownership of the writing process from beginning to end
+
+Technical Skills
+Languages:  Java, Typescript, Kotlin, Python, C, C++, Carbon, SQL (Postgres), JavaScript, HTML/CSS, R,
+MATLAB, SwiftUI
+Frameworks:  React, Angular, Next.js Node.js, Flask, WordPress, FastAPI, TriviaAPI
+Developer Tools:  Git, VS Code, XCode, PyCharm, IntelliJ, Eclipse, Unix/Linux environments, Docker/Kubernetes
+Projects
+AgileFlow: DevOps Transformation for Rapid Delivery|Docker/Kubernetes, CI/CD, Jenkins
+•
+Implemented Infrastructure as Code (IaC) using Terraform, ensuring consistent and reliable provisioning of cloud
+resources.
+•
+Designed and established robust CI/CD pipelines with Jenkins, streamlining software build, testing, and
+deployment workflows.
+•
+Leveraged Docker for containerization and orchestrated applications using Kubernetes, enabling efficient scaling
+and management.
+•
+Integrated monitoring tools (Prometheus, Grafana) and ensured security compliance with vulnerability scanning
+and access controls.
+Distributed E-Commerce Platform|(Web Application) Java, Microservices, Spring Boot, Docker, JavaScript
+•
+Developed and integrated multiple microservices in Java using Spring Boot, handling aspects such as user
+authentication, product management, order processing, and payment transactions with a high degree of modularity
+and service isolation.
+•
+Containerized all microservices using Docker, ensuring consistency across development, testing, and production
+environments, and orchestrated these containers effectively to manage microservices lifecycle.
+•
+Implemented an API Gateway to route client requests to appropriate microservices, enforcing consistent API
+endpoint policies and reducing complexities for client-side communication.
+•
+Spearheaded the development of a dynamic and responsive Single Page Application (SPA) using JavaScript,
+providing a seamless and interactive user experience.
+Algorithm Sorting Visualizer|(Web Based Sorting) JavaScript, React
+•
+Made use of different sorting algorithm like :  Merge Sort, Quick Sort, Heap sort, Bubble sort
+•
+By the power of React, User-Interface, layout and Navigation
+•
+Learned the preparation, organisation and process necessary to transform an idea into reality
+•
+Successfully launched it on internet.
+Timber Game|C++, SFML
+•
+Developed a 2D Game work easily on flash player or in Terminal
+•
+Used SFML, which in common is Simple and Fast Multimedia Library a cross-platform software development
+library designed to provide a simple application programming interface that improves me to make the game
+playground and 2-D environment
+•
+Collaborated with Minecraft server administrators to suggest features and get feedback about the plugin
