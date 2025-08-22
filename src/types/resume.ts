@@ -23,6 +23,7 @@ export interface Resume {
     description?: string;
     tech?: string[];
     link?: string;
+    bullets?: string[];
   }>;
   education?: Array<{
     school?: string;
@@ -32,3 +33,4 @@ export interface Resume {
   }>;
   certifications?: string[];
 }
+

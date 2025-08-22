@@ -1,5 +1,5 @@
 import Link from "next/link";
-import resume from "@/data/resume.json";
+import resume from "@/data/himanshu_resume.json";
 import type { Resume } from "@/types/resume";
 
 export default function Home() {
@@ -9,6 +9,31 @@ export default function Home() {
   const experience = resumeData.experience || [];
   const projects = resumeData.projects || [];
   const education = resumeData.education || [];
+  const companyLogoMap: Record<string, string> = {
+    "google": "/logos-2/Google__G__logo.svg.png",
+    "goldman sachs": "/logos-2/GoldManSachs.png",
+    "cisco": "/logos-2/cisco-systems.png",
+    "reconvert": "/logos-2/reconvert.png",
+    "arkiter": "/logos/arkiter.svg",
+    "leetcode": "/logos-2/LeetCode.png",
+    "amazon": "/logos-2/amazon.png",
+    "figbytes": "/logos/figbytes.svg",
+  };
+  const getCompanyLogo = (company?: string) => {
+    if (!company) return "/logos/default.svg";
+    const normalized = company.toLowerCase().replace(/[^a-z0-9 ]+/g, "").trim();
+    const bestKey = Object.keys(companyLogoMap).find(k => normalized.startsWith(k)) || "";
+    return bestKey ? companyLogoMap[bestKey] : "/logos/default.svg";
+  };
+  const schoolLogoMap: Record<string, string> = {
+    "coventry": "/logos-2/coventry-university.png",
+  };
+  const getSchoolLogo = (school?: string) => {
+    if (!school) return "/logos/default.svg";
+    const normalized = school.toLowerCase().replace(/[^a-z0-9 ]+/g, "").trim();
+    const bestKey = Object.keys(schoolLogoMap).find(k => normalized.startsWith(k)) || "";
+    return bestKey ? schoolLogoMap[bestKey] : "/logos/default.svg";
+  };
   return (
     <div className="min-h-screen bg-gradient-to-b from-zinc-50 to-white dark:from-zinc-950 dark:to-zinc-900 text-zinc-900 dark:text-zinc-100">
       <header className="mx-auto max-w-5xl px-6 pt-16 pb-8">
@@ -16,7 +41,7 @@ export default function Home() {
           <div>
             <h1 className="text-4xl sm:text-5xl font-bold tracking-tight">{resumeData.name}</h1>
             <p className="mt-2 text-zinc-600 dark:text-zinc-400">
-              {resumeData.headline || "Software Engineer"}
+              {resumeData.headline || "Tech Lead"}
             </p>
           </div>
           <div className="text-sm text-zinc-600 dark:text-zinc-400 space-y-1">
@@ -27,10 +52,10 @@ export default function Home() {
               <a className="hover:underline" href={`tel:${contact.phone.replace(/\s+/g,'')}`}>{contact.phone}</a>
             </p>}
             <div className="flex gap-3 flex-wrap">
-              {contact.website && <Link className="underline underline-offset-4" href={`https://${contact.website}`} target="_blank">Website</Link>}
+              <Link className="underline underline-offset-4" href="https://hi-malik.vercel.app" target="_blank">Website</Link>
               {contact.linkedin && <Link className="underline underline-offset-4" href={`https://${contact.linkedin}`} target="_blank">LinkedIn</Link>}
               {contact.github && <Link className="underline underline-offset-4" href={`https://${contact.github}`} target="_blank">GitHub</Link>}
-              <Link className="underline underline-offset-4" href="/Shakunt_Malik_Resume.pdf" target="_blank">Download CV</Link>
+              <Link className="underline underline-offset-4" href="/Himanshu_Malik_Resume.pdf" target="_blank">Download CV</Link>
             </div>
           </div>
         </div>
@@ -69,15 +94,21 @@ export default function Home() {
             <h2 className="text-xl font-semibold">Education</h2>
             <ul className="mt-4 space-y-4">
               {education.map((ed, idx: number) => (
-                <li key={idx} className="p-4 rounded-lg border border-zinc-200 dark:border-zinc-800">
-                  <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
-                    <div>
-                      <p className="font-medium">{ed.school}</p>
-                      <p className="text-sm text-zinc-600 dark:text-zinc-400">{ed.degree}</p>
+                <li key={idx} className="group relative p-4 rounded-lg border border-zinc-200 dark:border-zinc-800 transition-shadow">
+                  <span className="pointer-events-none absolute -inset-1 rounded-xl opacity-0 group-hover:opacity-100 transition duration-300 bg-gradient-to-br from-green-300/25 via-green-200/10 to-transparent blur-md"></span>
+                  <div className="relative">
+                    <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2">
+                      <div className="flex items-center gap-4">
+                        <img src={getSchoolLogo(ed.school)} alt={(ed.school || 'School') + ' logo'} width={32} height={32} className="rounded object-contain shrink-0" />
+                        <div>
+                          <p className="font-medium leading-tight">{ed.school}</p>
+                          <p className="text-sm text-zinc-600 dark:text-zinc-400 leading-snug">{ed.degree}</p>
+                        </div>
+                      </div>
+                      <p className="text-sm text-zinc-600 dark:text-zinc-400">{ed.duration}</p>
                     </div>
-                    <p className="text-sm text-zinc-600 dark:text-zinc-400">{ed.duration}</p>
+                    {ed.location && <p className="text-sm text-zinc-600 dark:text-zinc-400 mt-1">{ed.location}</p>}
                   </div>
-                  {ed.location && <p className="text-sm text-zinc-600 dark:text-zinc-400 mt-1">{ed.location}</p>}
                 </li>
               ))}
             </ul>
@@ -89,22 +120,28 @@ export default function Home() {
             <h2 className="text-xl font-semibold">Experience</h2>
             <ul className="mt-4 space-y-6">
               {experience.map((ex, idx: number) => (
-                <li key={idx} className="p-4 rounded-lg border border-zinc-200 dark:border-zinc-800">
-                  <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
-                    <div>
-                      <p className="font-medium">{ex.company}</p>
-                      <p className="text-sm text-zinc-600 dark:text-zinc-400">{ex.role}</p>
+                <li key={idx} className="group relative p-4 rounded-lg border border-zinc-200 dark:border-zinc-800 transition-shadow">
+                  <span className="pointer-events-none absolute -inset-1 rounded-xl opacity-0 group-hover:opacity-100 transition duration-300 bg-gradient-to-br from-green-300/25 via-green-200/10 to-transparent blur-md"></span>
+                  <div className="relative">
+                    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+                      <div className="flex items-center gap-3">
+                        <img src={getCompanyLogo(ex.company)} alt={(ex.company || 'Company') + ' logo'} width={24} height={24} className="rounded" />
+                        <div>
+                          <p className="font-medium">{ex.company}</p>
+                          <p className="text-sm text-zinc-600 dark:text-zinc-400">{ex.role}</p>
+                        </div>
+                      </div>
+                      <p className="text-sm text-zinc-600 dark:text-zinc-400">{ex.duration}</p>
                     </div>
-                    <p className="text-sm text-zinc-600 dark:text-zinc-400">{ex.duration}</p>
+                    {ex.location && <p className="text-sm text-zinc-600 dark:text-zinc-400 mt-1">{ex.location}</p>}
+                    {ex.bullets && ex.bullets.length > 0 && (
+                      <ul className="mt-3 list-disc list-inside space-y-1 text-zinc-700 dark:text-zinc-300">
+                        {ex.bullets.map((b: string, i: number) => (
+                          <li key={i}>{b}</li>
+                        ))}
+                      </ul>
+                    )}
                   </div>
-                  {ex.location && <p className="text-sm text-zinc-600 dark:text-zinc-400 mt-1">{ex.location}</p>}
-                  {ex.bullets && ex.bullets.length > 0 && (
-                    <ul className="mt-3 list-disc list-inside space-y-1 text-zinc-700 dark:text-zinc-300">
-                      {ex.bullets.map((b: string, i: number) => (
-                        <li key={i}>{b}</li>
-                      ))}
-                    </ul>
-                  )}
                 </li>
               ))}
             </ul>
@@ -114,23 +151,33 @@ export default function Home() {
         {projects && projects.length > 0 && (
           <section>
             <h2 className="text-xl font-semibold">Projects</h2>
-            <ul className="mt-4 grid sm:grid-cols-2 gap-6">
+            <ul className="mt-4 space-y-6">
               {projects.map((pr, idx: number) => (
-                <li key={idx} className="p-4 rounded-lg border border-zinc-200 dark:border-zinc-800">
-                  <div className="flex items-start justify-between gap-4">
-                    <div>
+                <li key={idx} className="group relative p-4 rounded-lg border border-zinc-200 dark:border-zinc-800 transition-shadow">
+                  <span className="pointer-events-none absolute -inset-1 rounded-xl opacity-0 group-hover:opacity-100 transition duration-300 bg-gradient-to-br from-green-300/25 via-green-200/10 to-transparent blur-md"></span>
+                  <div className="relative">
+                    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
                       <p className="font-medium">{pr.name}</p>
-                      <p className="mt-1 text-sm text-zinc-700 dark:text-zinc-300">{pr.description}</p>
-                      {pr.tech && pr.tech.length > 0 && (
-                        <div className="mt-2 flex flex-wrap gap-2">
-                          {pr.tech.map((t: string) => (
-                            <span key={t} className="px-2 py-0.5 rounded bg-zinc-100 dark:bg-zinc-800 text-xs">{t}</span>
-                          ))}
-                        </div>
+                      {pr.link && (
+                        <Link className="text-sm underline underline-offset-4" href={pr.link} target="_blank">Open</Link>
                       )}
                     </div>
-                    {pr.link && (
-                      <Link className="text-sm underline underline-offset-4" href={pr.link} target="_blank">Open</Link>
+                    {pr.description && (
+                      <p className="mt-1 text-sm text-zinc-700 dark:text-zinc-300">{pr.description}</p>
+                    )}
+                    {pr.tech && pr.tech.length > 0 && (
+                      <div className="mt-2 flex flex-wrap gap-2">
+                        {pr.tech.map((t: string) => (
+                          <span key={t} className="px-2 py-0.5 rounded bg-zinc-100 dark:bg-zinc-800 text-xs">{t}</span>
+                        ))}
+                      </div>
+                    )}
+                    {pr.bullets && pr.bullets.length > 0 && (
+                      <ul className="mt-3 list-disc list-inside space-y-1 text-zinc-700 dark:text-zinc-300">
+                        {pr.bullets.map((b: string, i: number) => (
+                          <li key={i}>{b}</li>
+                        ))}
+                      </ul>
                     )}
                   </div>
                 </li>

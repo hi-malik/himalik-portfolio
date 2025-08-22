@@ -13,14 +13,14 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Shakunt Malik • Portfolio",
-  description: "Software Developer • Technical Analyst • Full-Stack Engineer",
+  title: "hi-malik",
+  description: "Tech Lead • Software Engineer • Full-Stack Developer",
   metadataBase: new URL("https://localhost"),
   openGraph: {
-    title: "Shakunt Malik • Portfolio",
+    title: "hi-malik",
     description: "Projects, experience, and skills",
     url: "/",
-    siteName: "Shakunt Malik",
+    siteName: "hi-malik",
     type: "website",
   },
 };

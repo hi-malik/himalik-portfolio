@@ -1,0 +1,241 @@
+{
+  "name": "Himanshu Malik",
+  "contact": {
+    "email": "hacking.himanshu@gmail.com",
+    "phone": "+91 827-378-4801",
+    "website": "hi-malik.com",
+    "linkedin": "linkedin.com/in/hi-malik",
+    "github": "github.com/hi-malik",
+    "location": ""
+  },
+  "skills": {
+    "Languages": [
+      "Java",
+      "Typescript",
+      "Kotlin",
+      "Python",
+      "C",
+      "C++",
+      "Carbon",
+      "SQL (Postgres)",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "R"
+    ],
+    "Frameworks": [
+      "React",
+      "Angular",
+      "Next.js Node.js",
+      "Flask",
+      "WordPress",
+      "FastAPI",
+      "TriviaAPI"
+    ],
+    "Developer Tools": [
+      "Git",
+      "VS Code",
+      "XCode",
+      "PyCharm",
+      "IntelliJ",
+      "Eclipse",
+      "Unix",
+      "Linux environments",
+      "Docker",
+      "Kubernetes"
+    ]
+  },
+  "experience": [
+    {
+      "company": "Google",
+      "role": "Tech LeadNYC",
+      "duration": "Jan 2025 – Present",
+      "location": "US",
+      "bullets": [
+        "Leading a high-performing team of 27 engineers across projects focused on Gemini 2.5 Flash, Pro, and Preview versions, balancing feature velocity with model safety and reliability.",
+        "Driving core architecture and release management for multiple LLM iterations using Python, C++, and JavaScript across evaluation, optimization, and deployment pipelines.",
+        "Collaborating cross-functionally with PMs, research scientists, and infra teams to ensure timely and scalable LLM releases globally.",
+        "Mentoring team members on deep model testing strategies, prompt crafting, and generation traceability tools for interpretability and debugging.",
+        "Spearheading internal tool development for versioned model rollouts, usage telemetry collection, and data quality instrumentation."
+      ]
+    },
+    {
+      "company": "Google",
+      "role": "Senior Software EngineerNYC",
+      "duration": "Oct 2024 – Jan 2025",
+      "location": "US",
+      "bullets": [
+        "Reviewed and optimized thousands of prompts used to evaluate and train Gemini LLM models, ensuring linguistic clarity, diversity, and factual integrity.",
+        "Led the scraping and preprocessing of large-scale web datasets, focusing on domain-specific corpora for research-level model training.",
+        "Collaborated with research scientists to experiment on Gemini DeepResearch model, contributing to one of Google’s most advanced LLM releases.",
+        "Worked on safe and ethical data curation pipelines to support training of Gemini DeepResearch, incorporating filters, classifiers, and relevance scoring.",
+        "Contributed Python-based tools and scripts to streamline model evaluation cycles and performance tracking during the Gemini DeepResearch project."
+      ]
+    },
+    {
+      "company": "Goldman Sachs",
+      "role": "Software EngineerMunich",
+      "duration": "Aug 2024 – Oct 2024",
+      "location": "Germany",
+      "bullets": [
+        "Developed secure, high-performance web services for an internal identity verification platform using Kotlin, Java 17, and Spring Boot, improving latency and throughput under load.",
+        "Designed and deployed distributed microservices leveraging RESTful APIs, ensuring compliance with PCI and internal security standards.",
+        "Integrated services with AWS cloud tools, enabling scalable and fault-tolerant operations across multiple regions.",
+        "Implemented features using Spring Security, JPA, Maven, and Gradle, with a strong focus on performance tuning and static code analysis tools for maintainability.",
+        "Built Redis-backed caching layers and containerized services with Docker, adhering to best practices in microservice architecture and cloud-native deployment."
+      ]
+    },
+    {
+      "company": "CISCO",
+      "role": "Software DeveloperBerlin",
+      "duration": "April 2023 – June 2024",
+      "location": "Germany",
+      "bullets": [
+        "Spearheaded the development of a Web3 decentralized application (DApp) using microservices architecture with Java and Spring Boot, providing a scalable backend for blockchain interactions.",
+        "Designed and implemented smart contracts on Ethereum using Solidity, enabling secure and transparent transactions within the DApp.",
+        "Developed microservices to handle user authentication, wallet integration, and transaction processing, each service interacting with the blockchain via web3.js and managed independently for modularity.",
+        "Employed IPFS (InterPlanetary File System) for decentralized storage, ensuring data integrity and availability across the network.",
+        "Utilized Docker and Kubernetes for containerization and orchestration, ensuring efficient deployment and scaling of microservices within a cloud environment.",
+        "Implemented asynchronous communication between services using Kafka, optimizing transaction processing and improving system reliability.",
+        "Collaborated with the DevOps team to establish CI/CD pipelines, enabling automated testing and secure deployment of updates to the smart contracts and backend services.",
+        "Integrated AWS cloud services for deployment, monitoring, and scalability of decentralized applications."
+      ]
+    },
+    {
+      "company": "ReConvert",
+      "role": "Software DeveloperNew York",
+      "duration": "Feb 2023 – April 2023",
+      "location": "U.S.A",
+      "bullets": [
+        "Developed new user-interface features using React JS from PHP",
+        "Build reusable components and front-end libraries for future use",
+        "Optimize applications for maximum speed and scalability",
+        "Collaborate with other team members and stakeholders to design and implement new features",
+        "Integrated Python and Flask-based REST endpoints to support dynamic UI components."
+      ]
+    },
+    {
+      "company": "ARKITER",
+      "role": "Front-End DeveloperLondon",
+      "duration": "Oct 2022 – Jan 2023",
+      "location": "U.K",
+      "bullets": [
+        "Building reliable user experiences that are simple, performant, and reliable using tools like React, React Native, JavaScript",
+        "Sharing ideas to help define the vision and roadmap",
+        "Mentor and train junior members on design, implementation, and standards",
+        "Build self-service tools for SME. Improve existing features that impact millions of interviewee candidate.",
+        "Leveraged AWS services to enhance hosting, deployment pipelines, and performance monitoring for front-end applications."
+      ]
+    },
+    {
+      "company": "LeetCode",
+      "role": "Full-Stack Java DeveloperCalifornia",
+      "duration": "Aug.  2021 – Aug.  2022",
+      "location": "USA",
+      "bullets": [
+        "Engineered robust, scalable microservices in Java using Spring Boot, crafting clean and efficient code to meet functional requirements and ensuring high availability and resilience.",
+        "Utilized AWS cloud solutions for backend service hosting, database management, and application scalability.",
+        "Employed Docker for containerization, facilitating consistent deployments and seamless integration across development, testing, and production environments.",
+        "Developed and maintained RESTful APIs, enabling seamless and secure client-server communications within a service-oriented architecture.",
+        "Implemented dynamic user interfaces with JavaScript, optimizing interactivity and user engagement through responsive design and modern web development practices.",
+        "Took ownership of the writing process from beginning to end"
+      ]
+    },
+    {
+      "company": "AMAZON",
+      "role": "Information Technology EngineerCoventry",
+      "duration": "Oct 2020 – July 2021",
+      "location": "U.K",
+      "bullets": [
+        "Communicate’s with managers to set up Warehouse computers used on on-site",
+        "Assess and troubleshoot computer problems brought by workers, managers and leading staff",
+        "Maintaining upkeep of computers, on-site equipment, and 200 printers across warehouse",
+        "Provide high levels of equipment availability to our internal customers by means of troubleshooting and prioritizing."
+      ]
+    },
+    {
+      "company": "Figbytes",
+      "role": "Frontend DeveloperOttawa",
+      "duration": "March 2020 – Sept 2020",
+      "location": "CANADA",
+      "bullets": [
+        "Designed and implement new features on their web solutions",
+        "Maintained the current web product.  Proper engineering methodologies and best practices followed",
+        "Produces and maintains documentation, using tools like Angular, Typescript, ASP.NET, CSharp",
+        "Work remotely with outside partners and developers"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "AgileFlow: DevOps Transformation for Rapid Delivery",
+      "description": "",
+      "tech": [
+        "Docker",
+        "Kubernetes",
+        "CI",
+        "CD",
+        "Jenkins"
+      ],
+      "bullets": [
+        "Implemented Infrastructure as Code (IaC) using Terraform, ensuring consistent and reliable provisioning of cloud resources.",
+        "Designed and established robust CI/CD pipelines with Jenkins, streamlining software build, testing, and deployment workflows.",
+        "Leveraged Docker for containerization and orchestrated applications using Kubernetes, enabling efficient scaling and management.",
+        "Integrated monitoring tools (Prometheus, Grafana) and ensured security compliance with vulnerability scanning and access controls."
+      ]
+    },
+    {
+      "name": "Distributed E-Commerce Platform",
+      "description": "",
+      "tech": [
+        "Web Application Java",
+        "Microservices",
+        "Spring Boot",
+        "Docker",
+        "JavaScript"
+      ],
+      "bullets": [
+        "Developed and integrated multiple microservices in Java using Spring Boot, handling aspects such as user authentication, product management, order processing, and payment transactions with a high degree of modularity and service isolation.",
+        "Containerized all microservices using Docker, ensuring consistency across development, testing, and production environments, and orchestrated these containers effectively to manage microservices lifecycle.",
+        "Implemented an API Gateway to route client requests to appropriate microservices, enforcing consistent API endpoint policies and reducing complexities for client-side communication.",
+        "Spearheaded the development of a dynamic and responsive Single Page Application (SPA) using JavaScript, providing a seamless and interactive user experience."
+      ]
+    },
+    {
+      "name": "Algorithm Sorting Visualizer",
+      "description": "",
+      "tech": [
+        "Web Based Sorting JavaScript",
+        "React"
+      ],
+      "bullets": [
+        "Made use of different sorting algorithm like :  Merge Sort, Quick Sort, Heap sort, Bubble sort",
+        "By the power of React, User-Interface, layout and Navigation",
+        "Learned the preparation, organisation and process necessary to transform an idea into reality",
+        "Successfully launched it on internet."
+      ]
+    },
+    {
+      "name": "Timber Game",
+      "description": "",
+      "tech": [
+        "C++",
+        "SFML"
+      ],
+      "bullets": [
+        "Developed a 2D Game work easily on flash player or in Terminal",
+        "Used SFML, which in common is Simple and Fast Multimedia Library a cross-platform software development library designed to provide a simple application programming interface that improves me to make the game playground and 2-D environment",
+        "Collaborated with Minecraft server administrators to suggest features and get feedback about the plugin"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "school": "Coventry",
+      "degree": "Bachelor’s of Science in Computer Science, First Class(Hons)",
+      "duration": "Jan. 2019 – May 2022",
+      "location": "UniversityCoventry, U.K"
+    }
+  ],
+  "certifications": []
+}
